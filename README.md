@@ -11,3 +11,8 @@ GeminiChat_Gui 把Gemini API 封装后的图形化界面工具，并且增加了
 ## Building
 
 To build a redistributable, production mode package, use `wails build`.
+
+
+## LINK
+https://makersuite.google.com/app/apikey
+https://wails.io/
