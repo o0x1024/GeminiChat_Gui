@@ -16,4 +16,5 @@ To build a redistributable, production mode package, use `wails build`.
 
 ## LINK
 https://makersuite.google.com/app/apikey
+
 https://wails.io/
