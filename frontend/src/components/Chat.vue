@@ -82,8 +82,8 @@ interface Message {
 }
 
 let question = ref('')
-let api_key = ref('AIzaSyAFeOAtvOra_i8BwvTeYw50WoIKU0y8wZY')
-let proxy = ref('http://127.0.0.1:7890')
+let api_key = ref('')
+let proxy = ref('')
 let settingvisible = ref(false)
 let messages: { list: Message[] } = reactive({ list: [] });
 const scrollableDiv = ref();
