@@ -17,7 +17,7 @@
           : <span style="color: black;">
 
             <div style="background-color: rgb(235, 240, 240); border-radius: 10px; ">
-              <p style="padding: 30px; white-space: pre-line;">{{ message.text }}</p>
+              <p style="padding: 20px; ">&nbsp;&nbsp;{{ message.text }}</p>
             </div>
 
             <!-- <div v-html="message.text"></div> -->
@@ -29,7 +29,7 @@
           : <span style="color: black; ">
             <p></p>
             <MdPreview :editorId="id" :modelValue="message.text"
-              style="background-color: rgb(235, 240, 240); line-height: 50px; padding: 0 10px;border-radius: 10px;" />
+              style="background-color: rgb(235, 240, 240); line-height: 0px; padding: 0 10px;border-radius: 10px;" />
             <MdCatalog :editorId="id" :scrollElement="scrollElement" />
 
           </span>
