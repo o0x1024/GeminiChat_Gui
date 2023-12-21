@@ -16,8 +16,8 @@
           <strong><span style="color: rgb(48, 143, 10);">{{ message.sender }}</span></strong>
           : <span style="color: black;">
 
-            <div style="background-color: rgb(235, 240, 240); line-height: 0px;border-radius: 10px; ">
-              <p style="padding: 30px;">{{ message.text }}</p>
+            <div style="background-color: rgb(235, 240, 240); border-radius: 10px; ">
+              <p style="padding: 30px; white-space: pre-line;">{{ message.text }}</p>
             </div>
 
             <!-- <div v-html="message.text"></div> -->
@@ -41,7 +41,7 @@
     </div>
 
     <div id="input" class="input-box ">
-      <input id="name" v-model="question" placeholder="say something" autocomplete="off" :disabled="sending"  class="input" type="text"
+      <textarea  id="name" v-model="question" placeholder="say something" autocomplete="off" :disabled="sending"  class="input" type="text"
         @keydown.enter="handleEnterKey" />
       <button class="btn" @click="send">
         <template v-if="sending">
@@ -201,12 +201,12 @@ function hidden_setting() {
 
 .result {
   width: 800px;
-  /* white-space: pre-line; */
+  white-space: pre-line;
   text-align: left;
   color: #babbbd;
   overflow-y: scroll;
   height: 640px;
-  line-height: 20px;
+
   margin: 1.2rem auto;
 }
 
@@ -309,15 +309,15 @@ function hidden_setting() {
 }
 
 .input-box .input {
-  font-size: 16px;
-  color: #656566;
+  font-size: 15px;
+  color: #000000;
   float: left;
-  width: 60%;
+  width: 70%;
   border: none;
   border-radius: 3px;
-  outline: none;
-  height: 45px;
-  line-height: 30px;
+  max-height: 45px;
+  font-family: '微软雅黑', Helvetica, sans-serif;
+  line-height: 45px;
   padding: 0 10px;
   background-color: rgba(240, 240, 240, 1);
   -webkit-font-smoothing: antialiased;
