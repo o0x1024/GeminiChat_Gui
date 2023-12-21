@@ -158,6 +158,10 @@ const handleEnterKey = () => {
 
 function send() {
 
+  if(sending.value){
+    return
+  }
+
   sending.value = !sending.value
   let mg: Message = { id: messages.list[messages.list.length - 1].id + 1, sender: "human", text: question.value }
   messages.list.push(mg)
