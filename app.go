@@ -107,7 +107,7 @@ func (a *App) startup(ctx context.Context) {
 
 }
 
-func (b *App) shutdown(ctx context.Context) {
+func (a *App) shutdown(ctx context.Context) {
 	usr, err := user.Current()
 	if err != nil {
 		panic(err)

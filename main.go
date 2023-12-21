@@ -17,9 +17,10 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "GeminiChat_Gui",
-		Width:  1245,
-		Height: 900,
+		Title:     "GeminiChat_Gui",
+		Width:     1245,
+		Height:    900,
+		MaxHeight: 900,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
